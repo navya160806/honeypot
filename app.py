@@ -46,6 +46,15 @@ def admin():
     data = c.fetchall()
     conn.close()
     return render_template('admin.html', data=data)
+ 
+@app.route('/delete/<int:id>')
+def delete_attack(id):
+    conn = sqlite3.connect('database.db')
+    c = conn.cursor()
+    c.execute("DELETE FROM attacks WHERE id=?", (id,))
+    conn.commit()
+    conn.close()
+    return redirect('/admin')
 
 if __name__ == '__main__':
     init_db()
