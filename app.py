@@ -56,6 +56,8 @@ def delete_attack(id):
     conn.close()
     return redirect('/admin')
 
+@app.route('/delete_all')
+
 if __name__ == '__main__':
     init_db()
     app.run(debug=True)
