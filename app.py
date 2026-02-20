@@ -61,9 +61,7 @@ def delete_all():
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
     c.execute("DELETE FROM attacks")
-    conn.commit()
-    conn.close()
-    return redirect('/admin')
+   
 
 if __name__ == '__main__':
     init_db()
