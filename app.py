@@ -53,13 +53,16 @@ def delete_attack(id):
     c = conn.cursor()
     c.execute("DELETE FROM attacks WHERE id=?", (id,))
     conn.commit()
-    conn.close()
+    conn.close
     return redirect('/admin')
 
 @app.route('/delete_all')
 def delete_all():
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
+
+
+
     c.execute("DELETE FROM attacks")
    
 
