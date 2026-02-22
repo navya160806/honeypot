@@ -44,7 +44,7 @@ def admin():
     c = conn.cursor()
     c.execute("SELECT * FROM attacks")
     data = c.fetchall()
-    conn.close()
+    
     return render_template('admin.html', data=data)
  
 @app.route('/delete/<int:id>')
