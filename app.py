@@ -50,7 +50,7 @@ def admin():
 @app.route('/delete/<int:id>')
 def delete_attack(id):
     conn = sqlite3.connect('database.db')
-    c = conn.cursor()
+    
     c.execute("DELETE FROM attacks WHERE id=?", (id,))
     conn.commit()
     conn.close
