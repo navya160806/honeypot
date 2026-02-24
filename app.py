@@ -39,11 +39,11 @@ def capture():
     return "Login Failed!"
 
 @app.route('/admin')
+def admin():
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
     c.execute("SELECT * FROM attacks")
     data = c.fetchall()
-
     return render_template('admin.html', data=data)
 
 
