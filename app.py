@@ -62,9 +62,6 @@ def delete_attack(id):
 def delete_all():
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
-
-
-
     c.execute("DELETE FROM attacks")
    
 
