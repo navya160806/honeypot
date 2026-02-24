@@ -43,8 +43,11 @@ def capture():
     c = conn.cursor()
     c.execute("SELECT * FROM attacks")
     data = c.fetchall()
-    
+
     return render_template('admin.html', data=data)
+
+
+
  
 @app.route('/delete/<int:id>')
 def delete_attack(id):
