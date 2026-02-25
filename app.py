@@ -26,8 +26,7 @@ def login():
 def capture():
     ip = request.remote_addr
     username = request.form['username']
-    password = request.form['password']
-    time = datetime.now()
+   
 
     conn = sqlite3.connect('database.db')
     c = conn.cursor()
