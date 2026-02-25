@@ -24,8 +24,7 @@ def login():
 
 @app.route('/login', methods=['POST'])
 def capture():
-    ip = request.remote_addr
-    username = request.form['username']
+
    
 
     conn = sqlite3.connect('database.db')
