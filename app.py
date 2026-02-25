@@ -22,8 +22,7 @@ def init_db():
 def login():
     return render_template('login.html')
 
-@app.route('/login', methods=['POST'])
-def capture():
+
 
    
 
