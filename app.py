@@ -18,7 +18,6 @@ def init_db():
     conn.commit()
     conn.close()
 
-@app.route('/')
 def login():
     return render_template('login.html')
 
