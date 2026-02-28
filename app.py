@@ -46,7 +46,7 @@ def admin():
 
 
  
-@app.route('/delete/<int:id>')
+
 def delete_attack(id):
     conn = sqlite3.connect('database.db')
     
