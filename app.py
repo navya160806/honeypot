@@ -18,7 +18,7 @@ def init_db():
     conn.commit()
     conn.close()
 
-def login():
+def 
     return render_template('login.html')
 
 
