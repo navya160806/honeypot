@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MCP Self-Auditing AI Monitor</title>
+
+<style>
+
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:#0f172a;
+color:white;
+}
+
+/* NAVBAR */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:#020617;
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#6366f1;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:white;
+font-size:16px;
+}
+
+nav a:hover{
+color:#6366f1;
+}
+
+/* HERO */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:100px;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+color:#cbd5e1;
+line-height:1.6;
+}
+
+.hero-buttons{
+margin-top:30px;
+}
+
+.primary{
+background:#6366f1;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+margin-right:10px;
+}
+
+.secondary{
+border:2px solid #6366f1;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+}
+
+.hero-img img{
+width:350px;
+}
+
+/* FEATURES */
+
+.features{
+padding:80px;
+text-align:center;
+}
+
+.features h2{
+margin-bottom:40px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* WORKFLOW */
+
+.workflow{
+padding:80px;
+text-align:center;
+background:#020617;
+}
+
+.steps{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+margin-top:40px;
+}
+
+.step{
+background:#1e293b;
+padding:25px;
+width:150px;
+border-radius:10px;
+}
+
+.step h3{
+background:#6366f1;
+width:40px;
+height:40px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+margin-bottom:10px;
+}
+
+/* TECH STACK */
+
+.tech{
+padding:80px;
+text-align:center;
+}
+
+.tech-grid{
+display:grid;
+grid-template-columns:repeat(3,200px);
+gap:20px;
+justify-content:center;
+margin-top:40px;
+}
+
+.tech-grid div{
+background:#1e293b;
+padding:15px;
+border-radius:8px;
+}
+
+/* ABOUT */
+
+.about{
+padding:80px;
+text-align:center;
+background:#020617;
+}
+
+.about p{
+max-width:700px;
+margin:auto;
+color:#cbd5e1;
+line-height:1.6;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+color:#94a3b8;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">MCP AI Monitor</div>
+
+<nav>
+<a href="#features">Features</a>
+<a href="#workflow">Workflow</a>
+<a href="#tech">Tech</a>
+<a href="#about">About</a>
+<a href="#">Login</a>
+<a href="#">Register</a>
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Self-Auditing AI Model Monitor</h1>
+
+<p>
+An intelligent monitoring platform that audits machine learning models,
+detects bias and data drift, evaluates model health using risk scores,
+and automatically repairs models using AI-powered analysis.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="primary">Get Started</a>
+<a href="#" class="secondary">Login</a>
+
+</div>
+
+</div>
+
+<div class="hero-img">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png">
+
+</div>
+
+</section>
+
+
+
+<section id="features" class="features">
+
+<h2>Core Features</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Model Upload</h3>
+<p>Upload trained machine learning models and datasets.</p>
+</div>
+
+<div class="card">
+<h3>Prediction Monitoring</h3>
+<p>Automatically run models and log prediction results.</p>
+</div>
+
+<div class="card">
+<h3>Drift Detection</h3>
+<p>Detect changes between training data and real world data.</p>
+</div>
+
+<div class="card">
+<h3>Bias Detection</h3>
+<p>Identify fairness issues across different groups.</p>
+</div>
+
+<div class="card">
+<h3>Risk Score</h3>
+<p>Evaluate overall model health using statistical metrics.</p>
+</div>
+
+<div class="card">
+<h3>Auto Model Repair</h3>
+<p>Clean data and retrain models automatically.</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="workflow" class="workflow">
+
+<h2>How It Works</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1</h3>
+<p>Upload Model</p>
+</div>
+
+<div class="step">
+<h3>2</h3>
+<p>Run Predictions</p>
+</div>
+
+<div class="step">
+<h3>3</h3>
+<p>Detect Bias</p>
+</div>
+
+<div class="step">
+<h3>4</h3>
+<p>Detect Drift</p>
+</div>
+
+<div class="step">
+<h3>5</h3>
+<p>Generate Risk Score</p>
+</div>
+
+<div class="step">
+<h3>6</h3>
+<p>Auto Repair Model</p>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="tech" class="tech">
+
+<h2>Technology Stack</h2>
+
+<div class="tech-grid">
+
+<div>Python</div>
+<div>Flask</div>
+<div>Pandas</div>
+<div>Scikit-Learn</div>
+<div>Chart.js</div>
+<div>Google Gemini API</div>
+
+</div>
+
+</section>
+
+
+
+<section id="about" class="about">
+
+<h2>About The Project</h2>
+
+<p>
+The MCP Self-Auditing AI Model Monitor is an intelligent AI system designed
+to automatically monitor machine learning models in production. The system
+analyzes prediction behavior, detects bias and data drift, calculates model
+risk scores, and generates explainable reports using Google Gemini AI.
+It can also repair models by cleaning data and retraining them automatically.
+</p>
+
+</section>
+
+
+
+<footer>
+
+<p>Final Year AI Project | Self-Auditing AI Model Monitor</p>
+
+</footer>
+
+
+</body>
+</html>
